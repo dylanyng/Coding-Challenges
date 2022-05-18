@@ -1,15 +1,18 @@
-// Name: Sum of two lowest positive integers
+// Name: Reverse words
 
 
 // Directions: 
-// Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.
+// Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
 
-// For example, when an array is passed like [19, 5, 42, 2, 77], the output should be 7.
+// Examples:
+// "This is an example!" ==> "sihT si na !elpmaxe"
+// "double  spaces"      ==> "elbuod  secaps"
 
-// [10, 343445353, 3453445, 3453545353453] should return 3453455.
 
-
-function sumTwoSmallestNumbers(numbers) { 
-  numbers.sort((a, b) => a - b);
-  return numbers[0] + numbers[1];
+function reverseWords(str) {
+  str = str.split(' ');
+  for (let i = 0; i < str.length; i++) {
+    str[i] = str[i].split('').reverse().join('');
+  }
+  return str.join(' ');
 }

@@ -25,8 +25,7 @@ function getCount(str) {
       }
     });
   }
-  
+
   // Return the result
   return vowelsCount;
 }
-

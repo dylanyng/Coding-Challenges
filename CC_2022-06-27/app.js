@@ -9,6 +9,7 @@
 // [1,2,2,3,3,3,4,3,3,3,2,2,1] should return 4, because it appears 1 time (which is odd).
 
 
+// Solution:
 // Create an arrow function that finds the occurences of a given element
 // Loop through all elements, if an element is odd, return that element
 function findOdd(A) {

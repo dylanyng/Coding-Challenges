@@ -12,7 +12,7 @@
 
 function findShort(s){
   const splitStr = s.split(' ');
-  return (splitStr.sort(( a, b ) => a.length - b.length)[0].length)
+  return (splitStr.sort((a, b) => a.length - b.length)[0].length)
 }
 
 console.log(findShort('Hello my dear cousin'))
